@@ -72,7 +72,6 @@ class TriangularArbitrageModel:
 
         return self.market_data
 
-
     def get_implicit_profit(self, total_base_asset):
         # get the implied profit from executing a triangular arbitrage trade with the specified base asset amount
         # this calculates trades against the most recent order book
