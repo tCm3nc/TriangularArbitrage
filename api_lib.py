@@ -131,3 +131,5 @@ def get_book_ticker(symbol='BTCUSDT'):
         response = requests.get(_base_endpoint + ep, params=parameters, headers=headers)
     return response
 
+def post_test_order():
+    ep = 'POST /api/v3/order/test'
