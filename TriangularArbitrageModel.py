@@ -69,9 +69,9 @@ class TriangularArbitrageModel:
         self.pair_c_valid_name = valid_pair_name[self.pair_c]
 
         # determine if the valid pair needs to be inverted for our model
-        self.pair_a_inversion = self.pair_a_valid_name.startswith(quote_asset)
-        self.pair_b_inversion = self.pair_b_valid_name.startswith(tertiary_asset)
-        self.pair_c_inversion = self.pair_c_valid_name.startswith(base_asset)
+        self.pair_a_inversion = self.pair_a_valid_name.startswith(quote_asset) #usdt/eth false
+        self.pair_b_inversion = self.pair_b_valid_name.startswith(tertiary_asset) #eth/btc false
+        self.pair_c_inversion = self.pair_c_valid_name.startswith(base_asset) # btc/usdt false
 
         # call get_market_data to update the data
         self.market_data = {}
